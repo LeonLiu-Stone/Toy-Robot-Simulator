@@ -5,7 +5,7 @@ namespace Robots.Surfaces
     /// <summary>
     /// Surface size.
     /// </summary>
-    public abstract class SurfaceSize
+    public abstract class Surface
     {
         /// <summary>
         /// Gets the minimum x.

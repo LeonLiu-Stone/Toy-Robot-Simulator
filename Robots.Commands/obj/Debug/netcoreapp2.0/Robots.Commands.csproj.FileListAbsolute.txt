@@ -7,8 +7,8 @@
 /Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Commands/bin/Debug/netcoreapp2.0/Robots.Surfaces.dll
 /Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Commands/bin/Debug/netcoreapp2.0/Frameworks.Exceptions.pdb
 /Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Commands/bin/Debug/netcoreapp2.0/Robots.Actions.pdb
-/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Commands/bin/Debug/netcoreapp2.0/Frameworks.Logging.pdb
 /Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Commands/bin/Debug/netcoreapp2.0/Robots.Surfaces.pdb
+/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Commands/bin/Debug/netcoreapp2.0/Frameworks.Logging.pdb
 /Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Commands/obj/Debug/netcoreapp2.0/Robots.Commands.csprojResolveAssemblyReference.cache
 /Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Commands/obj/Debug/netcoreapp2.0/Robots.Commands.csproj.CoreCompileInputs.cache
 /Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Commands/obj/Debug/netcoreapp2.0/Robots.Commands.AssemblyInfoInputs.cache

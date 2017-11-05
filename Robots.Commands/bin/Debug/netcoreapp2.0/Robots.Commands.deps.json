@@ -9,7 +9,8 @@
       "Robots.Commands/1.0.0": {
         "dependencies": {
           "Frameworks.Exceptions": "1.0.0",
-          "Robots.Actions": "1.0.0"
+          "Robots.Actions": "1.0.0",
+          "Robots.Surfaces": "1.0.0"
         },
         "runtime": {
           "Robots.Commands.dll": {}

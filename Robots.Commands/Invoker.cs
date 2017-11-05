@@ -30,21 +30,21 @@ namespace Robots.Commands
             {
                 switch (action)
                 {
-                    //case RobotCommand.Place:
-                    //    cmd = new PlaceCommand();
-                    //    break;
+                    case RobotCommand.PLACE:
+                        cmd = new PlaceCommand(robot, parameters, _exceptionFactory);
+                        break;
                     case RobotCommand.MOVE:
                         cmd = new MoveCommand(robot);
                         break;
-                    //case RobotCommand.Left:
-                    //    cmd = new LeftCommand();
-                    //    break;
-                    //case RobotCommand.Right:
-                    //    cmd = new RightCommand();
-                    //    break;
-                    //case RobotCommand.Report:
-                    //cmd = new ReportCommand();
-                    //break;
+                    case RobotCommand.LEFT:
+                        cmd = new LeftCommand(robot);
+                        break;
+                    case RobotCommand.RIGHT:
+                        cmd = new RightCommand(robot);
+                        break;
+                    case RobotCommand.REPORT:
+                        cmd = new ReportCommand(robot);
+                    break;
                     default:
                         _exceptionFactory.GenerateWarningException($"Unkown command {commandLine}");
                         break;

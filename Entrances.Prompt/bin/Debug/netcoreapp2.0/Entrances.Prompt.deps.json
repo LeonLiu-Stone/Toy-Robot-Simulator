@@ -9,9 +9,11 @@
       "Entrances.Prompt/1.0.0": {
         "dependencies": {
           "Frameworks.Exceptions": "1.0.0",
+          "Robots.Actions": "1.0.0",
           "Robots.Commands": "1.0.0",
           "Robots.Common": "1.0.0",
           "Robots.Models": "1.0.0",
+          "Robots.Responses": "1.0.0",
           "Robots.Surfaces": "1.0.0"
         },
         "runtime": {
@@ -41,7 +43,9 @@
       },
       "Robots.Commands/1.0.0": {
         "dependencies": {
-          "Frameworks.Exceptions": "1.0.0"
+          "Frameworks.Exceptions": "1.0.0",
+          "Robots.Actions": "1.0.0",
+          "Robots.Surfaces": "1.0.0"
         },
         "runtime": {
           "Robots.Commands.dll": {}
@@ -58,10 +62,19 @@
           "Robots.Actions": "1.0.0",
           "Robots.Commands": "1.0.0",
           "Robots.Common": "1.0.0",
+          "Robots.Responses": "1.0.0",
           "Robots.Surfaces": "1.0.0"
         },
         "runtime": {
           "Robots.Models.dll": {}
+        }
+      },
+      "Robots.Responses/1.0.0": {
+        "dependencies": {
+          "Robots.Surfaces": "1.0.0"
+        },
+        "runtime": {
+          "Robots.Responses.dll": {}
         }
       },
       "Robots.Surfaces/1.0.0": {
@@ -103,6 +116,11 @@
       "sha512": ""
     },
     "Robots.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Robots.Responses/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

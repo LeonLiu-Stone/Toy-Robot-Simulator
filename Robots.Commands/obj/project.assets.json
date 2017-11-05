@@ -728,7 +728,8 @@
     ".NETCoreApp,Version=v2.0": [
       "Frameworks.Exceptions >= 1.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
-      "Robots.Actions >= 1.0.0"
+      "Robots.Actions >= 1.0.0",
+      "Robots.Surfaces >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -760,6 +761,9 @@
             },
             "/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Actions/Robots.Actions.csproj": {
               "projectPath": "/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Actions/Robots.Actions.csproj"
+            },
+            "/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Surfaces/Robots.Surfaces.csproj": {
+              "projectPath": "/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Surfaces/Robots.Surfaces.csproj"
             }
           }
         }

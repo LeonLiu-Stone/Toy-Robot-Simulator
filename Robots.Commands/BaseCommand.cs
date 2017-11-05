@@ -26,12 +26,12 @@ namespace Robots.Commands
         /// Gets the parameters.
         /// </summary>
         /// <value>The parameters.</value>
-        public virtual string Params { get; }
+        public string Params { get; set; }
 
         /// <summary>
         /// Gets the excute result.
         /// </summary>
         /// <value>The excute result.</value>
-        public virtual object ExcuteResult { get; }
+        public object ExcuteResult { get; set; }
     }
 }

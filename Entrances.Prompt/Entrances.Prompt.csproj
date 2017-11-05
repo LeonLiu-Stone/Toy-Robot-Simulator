@@ -11,5 +11,7 @@
     <ProjectReference Include="..\Robots.Models\Robots.Models.csproj" />
     <ProjectReference Include="..\Robots.Common\Robots.Common.csproj" />
     <ProjectReference Include="..\Robots.Commands\Robots.Commands.csproj" />
+    <ProjectReference Include="..\Robots.Responses\Robots.Responses.csproj" />
+    <ProjectReference Include="..\Robots.Actions\Robots.Actions.csproj" />
   </ItemGroup>
 </Project>

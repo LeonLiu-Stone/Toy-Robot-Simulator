@@ -5,7 +5,7 @@ namespace Robots.Surfaces
     /// <summary>
     /// Table surface size.
     /// </summary>
-    public class TableSurface : SurfaceSize
+    public class TableSurface : Surface
     {
         public override int minX { get { return 0; } }
 

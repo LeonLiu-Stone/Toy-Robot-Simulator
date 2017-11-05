@@ -10,5 +10,6 @@
     <ProjectReference Include="..\Robots.Actions\Robots.Actions.csproj" />
     <ProjectReference Include="..\Frameworks.Exceptions\Frameworks.Exceptions.csproj" />
     <ProjectReference Include="..\Robots.Commands\Robots.Commands.csproj" />
+    <ProjectReference Include="..\Robots.Responses\Robots.Responses.csproj" />
   </ItemGroup>
 </Project>

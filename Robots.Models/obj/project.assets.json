@@ -237,7 +237,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
-          "Frameworks.Exceptions": "1.0.0"
+          "Frameworks.Exceptions": "1.0.0",
+          "Robots.Actions": "1.0.0",
+          "Robots.Surfaces": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Robots.Commands.dll": {}
@@ -254,6 +256,19 @@
         },
         "runtime": {
           "bin/placeholder/Robots.Common.dll": {}
+        }
+      },
+      "Robots.Responses/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Robots.Surfaces": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Robots.Responses.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Robots.Responses.dll": {}
         }
       },
       "Robots.Surfaces/1.0.0": {
@@ -751,6 +766,11 @@
       "path": "../Robots.Common/Robots.Common.csproj",
       "msbuildProject": "../Robots.Common/Robots.Common.csproj"
     },
+    "Robots.Responses/1.0.0": {
+      "type": "project",
+      "path": "../Robots.Responses/Robots.Responses.csproj",
+      "msbuildProject": "../Robots.Responses/Robots.Responses.csproj"
+    },
     "Robots.Surfaces/1.0.0": {
       "type": "project",
       "path": "../Robots.Surfaces/Robots.Surfaces.csproj",
@@ -764,6 +784,7 @@
       "Robots.Actions >= 1.0.0",
       "Robots.Commands >= 1.0.0",
       "Robots.Common >= 1.0.0",
+      "Robots.Responses >= 1.0.0",
       "Robots.Surfaces >= 1.0.0"
     ]
   },
@@ -805,6 +826,9 @@
             },
             "/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Commands/Robots.Commands.csproj": {
               "projectPath": "/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Commands/Robots.Commands.csproj"
+            },
+            "/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Responses/Robots.Responses.csproj": {
+              "projectPath": "/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Responses/Robots.Responses.csproj"
             }
           }
         }
