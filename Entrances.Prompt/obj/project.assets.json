@@ -220,6 +220,32 @@
           "bin/placeholder/Frameworks.Logging.dll": {}
         }
       },
+      "Robots.Actions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Robots.Surfaces": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Robots.Actions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Robots.Actions.dll": {}
+        }
+      },
+      "Robots.Commands/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Frameworks.Exceptions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Robots.Commands.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Robots.Commands.dll": {}
+        }
+      },
       "Robots.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
@@ -234,7 +260,11 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
-          "Robots.Common": "1.0.0"
+          "Frameworks.Exceptions": "1.0.0",
+          "Robots.Actions": "1.0.0",
+          "Robots.Commands": "1.0.0",
+          "Robots.Common": "1.0.0",
+          "Robots.Surfaces": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Robots.Models.dll": {}
@@ -473,6 +503,32 @@
           "bin/placeholder/Frameworks.Logging.dll": {}
         }
       },
+      "Robots.Actions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Robots.Surfaces": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Robots.Actions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Robots.Actions.dll": {}
+        }
+      },
+      "Robots.Commands/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Frameworks.Exceptions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Robots.Commands.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Robots.Commands.dll": {}
+        }
+      },
       "Robots.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
@@ -487,7 +543,11 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
-          "Robots.Common": "1.0.0"
+          "Frameworks.Exceptions": "1.0.0",
+          "Robots.Actions": "1.0.0",
+          "Robots.Commands": "1.0.0",
+          "Robots.Common": "1.0.0",
+          "Robots.Surfaces": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Robots.Models.dll": {}
@@ -974,6 +1034,32 @@
           "bin/placeholder/Frameworks.Logging.dll": {}
         }
       },
+      "Robots.Actions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Robots.Surfaces": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Robots.Actions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Robots.Actions.dll": {}
+        }
+      },
+      "Robots.Commands/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Frameworks.Exceptions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Robots.Commands.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Robots.Commands.dll": {}
+        }
+      },
       "Robots.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
@@ -988,7 +1074,11 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
-          "Robots.Common": "1.0.0"
+          "Frameworks.Exceptions": "1.0.0",
+          "Robots.Actions": "1.0.0",
+          "Robots.Commands": "1.0.0",
+          "Robots.Common": "1.0.0",
+          "Robots.Surfaces": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Robots.Models.dll": {}
@@ -1475,6 +1565,32 @@
           "bin/placeholder/Frameworks.Logging.dll": {}
         }
       },
+      "Robots.Actions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Robots.Surfaces": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Robots.Actions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Robots.Actions.dll": {}
+        }
+      },
+      "Robots.Commands/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Frameworks.Exceptions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Robots.Commands.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Robots.Commands.dll": {}
+        }
+      },
       "Robots.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
@@ -1489,7 +1605,11 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
-          "Robots.Common": "1.0.0"
+          "Frameworks.Exceptions": "1.0.0",
+          "Robots.Actions": "1.0.0",
+          "Robots.Commands": "1.0.0",
+          "Robots.Common": "1.0.0",
+          "Robots.Surfaces": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Robots.Models.dll": {}
@@ -2500,6 +2620,16 @@
       "path": "../Frameworks.Logging/Frameworks.Logging.csproj",
       "msbuildProject": "../Frameworks.Logging/Frameworks.Logging.csproj"
     },
+    "Robots.Actions/1.0.0": {
+      "type": "project",
+      "path": "../Robots.Actions/Robots.Actions.csproj",
+      "msbuildProject": "../Robots.Actions/Robots.Actions.csproj"
+    },
+    "Robots.Commands/1.0.0": {
+      "type": "project",
+      "path": "../Robots.Commands/Robots.Commands.csproj",
+      "msbuildProject": "../Robots.Commands/Robots.Commands.csproj"
+    },
     "Robots.Common/1.0.0": {
       "type": "project",
       "path": "../Robots.Common/Robots.Common.csproj",
@@ -2519,8 +2649,8 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Frameworks.Exceptions >= 1.0.0",
-      "Frameworks.Logging >= 1.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
+      "Robots.Commands >= 1.0.0",
       "Robots.Common >= 1.0.0",
       "Robots.Models >= 1.0.0",
       "Robots.Surfaces >= 1.0.0"
@@ -2553,8 +2683,8 @@
             "/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Exceptions/Frameworks.Exceptions.csproj": {
               "projectPath": "/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Exceptions/Frameworks.Exceptions.csproj"
             },
-            "/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Logging/Frameworks.Logging.csproj": {
-              "projectPath": "/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Logging/Frameworks.Logging.csproj"
+            "/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Surfaces/Robots.Surfaces.csproj": {
+              "projectPath": "/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Surfaces/Robots.Surfaces.csproj"
             },
             "/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Models/Robots.Models.csproj": {
               "projectPath": "/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Models/Robots.Models.csproj"
@@ -2562,8 +2692,8 @@
             "/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Common/Robots.Common.csproj": {
               "projectPath": "/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Common/Robots.Common.csproj"
             },
-            "/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Surfaces/Robots.Surfaces.csproj": {
-              "projectPath": "/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Surfaces/Robots.Surfaces.csproj"
+            "/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Commands/Robots.Commands.csproj": {
+              "projectPath": "/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Commands/Robots.Commands.csproj"
             }
           }
         }

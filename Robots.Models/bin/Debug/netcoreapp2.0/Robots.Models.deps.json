@@ -8,7 +8,9 @@
     ".NETCoreApp,Version=v2.0": {
       "Robots.Models/1.0.0": {
         "dependencies": {
+          "Frameworks.Exceptions": "1.0.0",
           "Robots.Actions": "1.0.0",
+          "Robots.Commands": "1.0.0",
           "Robots.Common": "1.0.0",
           "Robots.Surfaces": "1.0.0"
         },
@@ -16,9 +18,33 @@
           "Robots.Models.dll": {}
         }
       },
+      "Frameworks.Exceptions/1.0.0": {
+        "dependencies": {
+          "Frameworks.Logging": "1.0.0"
+        },
+        "runtime": {
+          "Frameworks.Exceptions.dll": {}
+        }
+      },
+      "Frameworks.Logging/1.0.0": {
+        "runtime": {
+          "Frameworks.Logging.dll": {}
+        }
+      },
       "Robots.Actions/1.0.0": {
+        "dependencies": {
+          "Robots.Surfaces": "1.0.0"
+        },
         "runtime": {
           "Robots.Actions.dll": {}
+        }
+      },
+      "Robots.Commands/1.0.0": {
+        "dependencies": {
+          "Frameworks.Exceptions": "1.0.0"
+        },
+        "runtime": {
+          "Robots.Commands.dll": {}
         }
       },
       "Robots.Common/1.0.0": {
@@ -39,7 +65,22 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Frameworks.Exceptions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Frameworks.Logging/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Robots.Actions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Robots.Commands/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

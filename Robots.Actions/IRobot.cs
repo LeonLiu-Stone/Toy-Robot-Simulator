@@ -7,6 +7,11 @@ namespace Robots.Actions
     /// </summary>
     public interface IRobot
     {
+        /// <summary>
+        /// Execute the specified commandLine.
+        /// </summary>
+        /// <returns>The execute.</returns>
+        /// <param name="commandLine">Command line.</param>
         void Execute(string commandLine);
     }
 }

@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "Robots.Actions/1.0.0": {
+        "dependencies": {
+          "Robots.Surfaces": "1.0.0"
+        },
         "runtime": {
           "Robots.Actions.dll": {}
+        }
+      },
+      "Robots.Surfaces/1.0.0": {
+        "runtime": {
+          "Robots.Surfaces.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Robots.Actions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Robots.Surfaces/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

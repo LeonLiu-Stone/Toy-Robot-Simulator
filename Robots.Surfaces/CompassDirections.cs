@@ -7,9 +7,9 @@ namespace Robots.Surfaces
     /// </summary>
     public enum CompassDirections
     {
-        North = 1,
-        West = 2,
-        South = 3,
-        East = 4
+        NORTH = 1,
+        WEST = 2,
+        SOUTH = 3,
+        EAST = 4
     };
 }

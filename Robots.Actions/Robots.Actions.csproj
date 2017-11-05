@@ -4,4 +4,7 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Robots.Surfaces\Robots.Surfaces.csproj" />
+  </ItemGroup>
 </Project>

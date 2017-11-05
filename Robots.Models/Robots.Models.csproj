@@ -8,5 +8,7 @@
     <ProjectReference Include="..\Robots.Common\Robots.Common.csproj" />
     <ProjectReference Include="..\Robots.Surfaces\Robots.Surfaces.csproj" />
     <ProjectReference Include="..\Robots.Actions\Robots.Actions.csproj" />
+    <ProjectReference Include="..\Frameworks.Exceptions\Frameworks.Exceptions.csproj" />
+    <ProjectReference Include="..\Robots.Commands\Robots.Commands.csproj" />
   </ItemGroup>
 </Project>

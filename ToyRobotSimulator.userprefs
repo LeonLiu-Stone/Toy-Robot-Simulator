@@ -1,13 +1,15 @@
 ﻿<Properties StartupConfiguration="{D01BC000-23E1-46B1-B756-FEDA8360322A}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ToyRobotSimulator Status">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Robots.Commands/Invoker.cs">
     <Files>
-      <File FileName="Robots.Models/ToyRobot.cs" Line="15" Column="23" />
-      <File FileName="ToyRobotSimulator Status" />
+      <File FileName="Robots.Commands/Invoker.cs" Line="32" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Models/ToyRobot.cs" relfile="Robots.Models/ToyRobot.cs" line="25" column="49" />
+      <Breakpoint file="/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Models/RobotBase.cs" relfile="Robots.Models/RobotBase.cs" line="59" column="29" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />

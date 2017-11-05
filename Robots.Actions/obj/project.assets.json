@@ -196,6 +196,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Robots.Surfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Robots.Surfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Robots.Surfaces.dll": {}
+        }
       }
     }
   },
@@ -656,11 +666,17 @@
         "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Robots.Surfaces/1.0.0": {
+      "type": "project",
+      "path": "../Robots.Surfaces/Robots.Surfaces.csproj",
+      "msbuildProject": "../Robots.Surfaces/Robots.Surfaces.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "Robots.Surfaces >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -686,7 +702,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Surfaces/Robots.Surfaces.csproj": {
+              "projectPath": "/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Surfaces/Robots.Surfaces.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

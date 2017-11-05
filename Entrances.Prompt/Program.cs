@@ -10,8 +10,8 @@ namespace Entrances.Prompt
     {
         static void Main(string[] args)
         {
-            IExceptionFactory exceptionFactory = new ExceptionFactory();
-            var robot = new ToyRobot(new TableSurface());
+            ExceptionFactory exceptionFactory = new ExceptionFactory();
+            var robot = new ToyRobot(new TableSurface(), exceptionFactory);
             robot.ProgressChanged += OnProgressChanged;
 
             Console.WriteLine("Please any key to start");

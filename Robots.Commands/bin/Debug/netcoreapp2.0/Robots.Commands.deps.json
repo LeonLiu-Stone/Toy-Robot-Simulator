@@ -1,0 +1,73 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.0",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.0": {
+      "Robots.Commands/1.0.0": {
+        "dependencies": {
+          "Frameworks.Exceptions": "1.0.0",
+          "Robots.Actions": "1.0.0"
+        },
+        "runtime": {
+          "Robots.Commands.dll": {}
+        }
+      },
+      "Frameworks.Exceptions/1.0.0": {
+        "dependencies": {
+          "Frameworks.Logging": "1.0.0"
+        },
+        "runtime": {
+          "Frameworks.Exceptions.dll": {}
+        }
+      },
+      "Frameworks.Logging/1.0.0": {
+        "runtime": {
+          "Frameworks.Logging.dll": {}
+        }
+      },
+      "Robots.Actions/1.0.0": {
+        "dependencies": {
+          "Robots.Surfaces": "1.0.0"
+        },
+        "runtime": {
+          "Robots.Actions.dll": {}
+        }
+      },
+      "Robots.Surfaces/1.0.0": {
+        "runtime": {
+          "Robots.Surfaces.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Robots.Commands/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Frameworks.Exceptions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Frameworks.Logging/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Robots.Actions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Robots.Surfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

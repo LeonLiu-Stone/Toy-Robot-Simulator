@@ -1,5 +1,7 @@
 ﻿using System;
+using Frameworks.Exceptions;
 using Robots.Actions;
+using Robots.Commands;
 using Robots.Common;
 using Robots.Surfaces;
 
@@ -10,6 +12,13 @@ namespace Robots.Models
     /// </summary>
     public class RobotBase : IRobot
     {
+        private IExceptionFactory _exceptionFactory;
+
+        public RobotBase(IExceptionFactory exceptionFactory)
+        {
+            _exceptionFactory = exceptionFactory;
+        }
+
         /// <summary>
         /// Gets the model.
         /// </summary>
@@ -33,6 +42,9 @@ namespace Robots.Models
         /// </summary>
         public event ProgressChangedHandler ProgressChanged;
 
+        /// <summary>
+        /// Ons the progress changed event.
+        /// </summary>
         protected void OnProgressChangedEvent() => ProgressChanged?.Invoke(this, new ProgressChangedEventArgs(Position));
 
         /// <summary>
@@ -42,7 +54,9 @@ namespace Robots.Models
         /// <param name="commandLine">Command line.</param>
         public void Execute(string commandLine)
         {
-            throw new NotImplementedException();
+            Invoker invoker = new Invoker(_exceptionFactory);
+            ICommand command = invoker.GetCommand(commandLine, this);
+            command.Execute();
         }
     }
 }

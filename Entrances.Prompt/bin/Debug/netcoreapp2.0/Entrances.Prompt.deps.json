@@ -9,7 +9,7 @@
       "Entrances.Prompt/1.0.0": {
         "dependencies": {
           "Frameworks.Exceptions": "1.0.0",
-          "Frameworks.Logging": "1.0.0",
+          "Robots.Commands": "1.0.0",
           "Robots.Common": "1.0.0",
           "Robots.Models": "1.0.0",
           "Robots.Surfaces": "1.0.0"
@@ -31,6 +31,22 @@
           "Frameworks.Logging.dll": {}
         }
       },
+      "Robots.Actions/1.0.0": {
+        "dependencies": {
+          "Robots.Surfaces": "1.0.0"
+        },
+        "runtime": {
+          "Robots.Actions.dll": {}
+        }
+      },
+      "Robots.Commands/1.0.0": {
+        "dependencies": {
+          "Frameworks.Exceptions": "1.0.0"
+        },
+        "runtime": {
+          "Robots.Commands.dll": {}
+        }
+      },
       "Robots.Common/1.0.0": {
         "runtime": {
           "Robots.Common.dll": {}
@@ -38,7 +54,11 @@
       },
       "Robots.Models/1.0.0": {
         "dependencies": {
-          "Robots.Common": "1.0.0"
+          "Frameworks.Exceptions": "1.0.0",
+          "Robots.Actions": "1.0.0",
+          "Robots.Commands": "1.0.0",
+          "Robots.Common": "1.0.0",
+          "Robots.Surfaces": "1.0.0"
         },
         "runtime": {
           "Robots.Models.dll": {}
@@ -63,6 +83,16 @@
       "sha512": ""
     },
     "Frameworks.Logging/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Robots.Actions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Robots.Commands/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

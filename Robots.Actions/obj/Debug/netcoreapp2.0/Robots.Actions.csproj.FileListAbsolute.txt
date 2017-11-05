@@ -1,6 +1,9 @@
 /Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Actions/bin/Debug/netcoreapp2.0/Robots.Actions.deps.json
 /Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Actions/bin/Debug/netcoreapp2.0/Robots.Actions.dll
 /Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Actions/bin/Debug/netcoreapp2.0/Robots.Actions.pdb
+/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Actions/bin/Debug/netcoreapp2.0/Robots.Surfaces.dll
+/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Actions/bin/Debug/netcoreapp2.0/Robots.Surfaces.pdb
+/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Actions/obj/Debug/netcoreapp2.0/Robots.Actions.csprojResolveAssemblyReference.cache
 /Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Actions/obj/Debug/netcoreapp2.0/Robots.Actions.csproj.CoreCompileInputs.cache
 /Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Actions/obj/Debug/netcoreapp2.0/Robots.Actions.AssemblyInfoInputs.cache
 /Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Actions/obj/Debug/netcoreapp2.0/Robots.Actions.AssemblyInfo.cs
