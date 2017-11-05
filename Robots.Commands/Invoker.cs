@@ -24,6 +24,7 @@ namespace Robots.Commands
         public ICommand GetCommand(string commandLine, IRobot robot)
         {
             ICommand cmd = null;
+            //C# 7 new feature Tuples
             var (action, parameters) = getCommandInfo();
 
             try
@@ -56,6 +57,7 @@ namespace Robots.Commands
             }
             return cmd;
 
+            //C# 7 new feature local function
             (RobotCommand action, string parameters) getCommandInfo()
             {
                 commandLine = commandLine.Trim();

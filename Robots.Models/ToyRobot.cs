@@ -41,7 +41,7 @@ namespace Robots.Models
 
         public void ReportPosition()
         {
-            throw new NotImplementedException();
+            OnProgressChangedEvent();
         }
 
         public void RotateToLeft()
