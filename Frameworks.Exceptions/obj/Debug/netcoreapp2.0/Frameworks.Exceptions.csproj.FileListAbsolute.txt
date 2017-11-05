@@ -1,0 +1,11 @@
+/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Exceptions/bin/Debug/netcoreapp2.0/Frameworks.Exceptions.deps.json
+/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Exceptions/bin/Debug/netcoreapp2.0/Frameworks.Exceptions.dll
+/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Exceptions/bin/Debug/netcoreapp2.0/Frameworks.Exceptions.pdb
+/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Exceptions/bin/Debug/netcoreapp2.0/Frameworks.Logging.dll
+/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Exceptions/bin/Debug/netcoreapp2.0/Frameworks.Logging.pdb
+/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Exceptions/obj/Debug/netcoreapp2.0/Frameworks.Exceptions.csprojResolveAssemblyReference.cache
+/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Exceptions/obj/Debug/netcoreapp2.0/Frameworks.Exceptions.csproj.CoreCompileInputs.cache
+/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Exceptions/obj/Debug/netcoreapp2.0/Frameworks.Exceptions.AssemblyInfoInputs.cache
+/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Exceptions/obj/Debug/netcoreapp2.0/Frameworks.Exceptions.AssemblyInfo.cs
+/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Exceptions/obj/Debug/netcoreapp2.0/Frameworks.Exceptions.dll
+/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Exceptions/obj/Debug/netcoreapp2.0/Frameworks.Exceptions.pdb

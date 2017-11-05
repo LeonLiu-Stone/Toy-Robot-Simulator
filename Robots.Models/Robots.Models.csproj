@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Robots.Common\Robots.Common.csproj" />
+    <ProjectReference Include="..\Robots.Surfaces\Robots.Surfaces.csproj" />
+    <ProjectReference Include="..\Robots.Actions\Robots.Actions.csproj" />
+  </ItemGroup>
+</Project>

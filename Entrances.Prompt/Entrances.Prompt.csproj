@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Frameworks.Exceptions\Frameworks.Exceptions.csproj" />
+    <ProjectReference Include="..\Frameworks.Logging\Frameworks.Logging.csproj" />
+    <ProjectReference Include="..\Robots.Models\Robots.Models.csproj" />
+    <ProjectReference Include="..\Robots.Common\Robots.Common.csproj" />
+    <ProjectReference Include="..\Robots.Surfaces\Robots.Surfaces.csproj" />
+  </ItemGroup>
+</Project>
