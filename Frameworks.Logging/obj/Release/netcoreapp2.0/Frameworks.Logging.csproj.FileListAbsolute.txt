@@ -1,0 +1,9 @@
+/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Logging/bin/Release/netcoreapp2.0/Frameworks.Logging.deps.json
+/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Logging/bin/Release/netcoreapp2.0/Frameworks.Logging.dll
+/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Logging/bin/Release/netcoreapp2.0/Frameworks.Logging.pdb
+/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Logging/obj/Release/netcoreapp2.0/Frameworks.Logging.csprojResolveAssemblyReference.cache
+/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Logging/obj/Release/netcoreapp2.0/Frameworks.Logging.csproj.CoreCompileInputs.cache
+/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Logging/obj/Release/netcoreapp2.0/Frameworks.Logging.AssemblyInfoInputs.cache
+/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Logging/obj/Release/netcoreapp2.0/Frameworks.Logging.AssemblyInfo.cs
+/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Logging/obj/Release/netcoreapp2.0/Frameworks.Logging.dll
+/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Logging/obj/Release/netcoreapp2.0/Frameworks.Logging.pdb

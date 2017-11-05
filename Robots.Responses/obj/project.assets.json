@@ -197,6 +197,29 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Frameworks.Exceptions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Frameworks.Logging": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Frameworks.Exceptions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Frameworks.Exceptions.dll": {}
+        }
+      },
+      "Frameworks.Logging/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Frameworks.Logging.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Frameworks.Logging.dll": {}
+        }
+      },
       "Robots.Surfaces/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
@@ -667,6 +690,16 @@
         "netstandard.library.nuspec"
       ]
     },
+    "Frameworks.Exceptions/1.0.0": {
+      "type": "project",
+      "path": "../Frameworks.Exceptions/Frameworks.Exceptions.csproj",
+      "msbuildProject": "../Frameworks.Exceptions/Frameworks.Exceptions.csproj"
+    },
+    "Frameworks.Logging/1.0.0": {
+      "type": "project",
+      "path": "../Frameworks.Logging/Frameworks.Logging.csproj",
+      "msbuildProject": "../Frameworks.Logging/Frameworks.Logging.csproj"
+    },
     "Robots.Surfaces/1.0.0": {
       "type": "project",
       "path": "../Robots.Surfaces/Robots.Surfaces.csproj",
@@ -675,6 +708,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Frameworks.Exceptions >= 1.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "Robots.Surfaces >= 1.0.0"
     ]
@@ -705,6 +739,9 @@
           "projectReferences": {
             "/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Surfaces/Robots.Surfaces.csproj": {
               "projectPath": "/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Surfaces/Robots.Surfaces.csproj"
+            },
+            "/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Exceptions/Frameworks.Exceptions.csproj": {
+              "projectPath": "/Users/leon/Projects/Interview/ToyRobotSimulator/Frameworks.Exceptions/Frameworks.Exceptions.csproj"
             }
           }
         }

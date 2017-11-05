@@ -262,6 +262,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
+          "Frameworks.Exceptions": "1.0.0",
           "Robots.Surfaces": "1.0.0"
         },
         "compile": {

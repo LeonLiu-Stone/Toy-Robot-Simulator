@@ -1,0 +1,9 @@
+/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Surfaces/bin/Release/netcoreapp2.0/Robots.Surfaces.deps.json
+/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Surfaces/bin/Release/netcoreapp2.0/Robots.Surfaces.dll
+/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Surfaces/bin/Release/netcoreapp2.0/Robots.Surfaces.pdb
+/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Surfaces/obj/Release/netcoreapp2.0/Robots.Surfaces.csprojResolveAssemblyReference.cache
+/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Surfaces/obj/Release/netcoreapp2.0/Robots.Surfaces.csproj.CoreCompileInputs.cache
+/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Surfaces/obj/Release/netcoreapp2.0/Robots.Surfaces.AssemblyInfoInputs.cache
+/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Surfaces/obj/Release/netcoreapp2.0/Robots.Surfaces.AssemblyInfo.cs
+/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Surfaces/obj/Release/netcoreapp2.0/Robots.Surfaces.dll
+/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Surfaces/obj/Release/netcoreapp2.0/Robots.Surfaces.pdb

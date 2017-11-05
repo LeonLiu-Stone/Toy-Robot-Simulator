@@ -1,10 +1,10 @@
 using System;
+using System.Diagnostics;
 using Xunit;
-using Robots.Surfaces;
+using Robots.Common;
 using Robots.Models;
 using Frameworks.Exceptions;
-using Robots.Commands;
-using Robots.Common;
+using Robots.Surfaces;
 
 namespace UnitTests.RobotModels
 {
@@ -21,8 +21,9 @@ namespace UnitTests.RobotModels
         public void Place_WhenStatusIsOff_InvaliadPosition(CompassDirections direction, int positionX, int positionY)
         {
             var robot = new ToyRobot(new TableSurface(), _exceptionFactory);
-            robot.Place(new RobotPosition { X = positionX, Y = positionY, Direction = direction });
-            Assert.Equal(RobotStatus.Off, robot.Status);
+            Exception ex = Assert.Throws<SafeException>(() => robot.Place(new RobotPosition { X = positionX, Y = positionY, Direction = direction }));
+
+            Assert.Equal("the robot cannot place to expected postion", ex.Message);
         }
 
         [Theory]
@@ -50,12 +51,10 @@ namespace UnitTests.RobotModels
             var robot = new ToyRobot(new TableSurface(), _exceptionFactory);
             robot.Place(new RobotPosition { X = 2, Y = 2, Direction = CompassDirections.NORTH });
             robot.MoveForward();
-            robot.Place(new RobotPosition { X = positionX, Y = positionY, Direction = direction });
 
-            Assert.Equal(RobotStatus.On, robot.Status);
-            Assert.Equal(positionX, 2);
-            Assert.Equal(positionY, 3);
-            Assert.Equal(direction, CompassDirections.NORTH);
+            Exception ex = Assert.Throws<SafeException>(() => robot.Place(new RobotPosition { X = positionX, Y = positionY, Direction = direction }));
+
+            Assert.Equal("the robot cannot place to expected postion", ex.Message);
         }
 
         [Theory]
@@ -74,14 +73,25 @@ namespace UnitTests.RobotModels
             Assert.Equal(positionY, robot.Position.Y);
             Assert.Equal(direction, robot.Position.Direction);
         }
+        
+        [Fact]
+        public void ReportPosition_WhenStatusIsOff()
+        {
+            var robot = new ToyRobot(new TableSurface(), _exceptionFactory);
 
+            Exception ex = Assert.Throws<SafeException>(() => robot.ReportPosition());
+
+            Assert.Equal("please place this robot first", ex.Message);
+        }
+        
         [Fact]
         public void Move_WhenStatusIsOff()
         {
             var robot = new ToyRobot(new TableSurface(), _exceptionFactory);
-            robot.MoveForward();
 
-            Assert.Equal(RobotStatus.Off, robot.Status);
+            Exception ex = Assert.Throws<SafeException>(() => robot.MoveForward());
+
+            Assert.Equal("please place this robot first", ex.Message);
         }
 
         [Theory]
@@ -111,16 +121,10 @@ namespace UnitTests.RobotModels
 
         [Theory]
         [InlineData(CompassDirections.NORTH, 0, 0, 0, 1)]
-        [InlineData(CompassDirections.SOUTH, 0, 0, 0, 0)]
-        [InlineData(CompassDirections.WEST, 0, 0, 0, 0)]
         [InlineData(CompassDirections.EAST, 0, 0, 1, 0)]
-        [InlineData(CompassDirections.NORTH, SURFACESIZE, SURFACESIZE, SURFACESIZE, SURFACESIZE)]
         [InlineData(CompassDirections.SOUTH, SURFACESIZE, SURFACESIZE, SURFACESIZE, SURFACESIZE - 1)]
         [InlineData(CompassDirections.WEST, SURFACESIZE, SURFACESIZE, SURFACESIZE - 1, SURFACESIZE)]
-        [InlineData(CompassDirections.EAST, SURFACESIZE, SURFACESIZE, SURFACESIZE, SURFACESIZE)]
-        [InlineData(CompassDirections.SOUTH, 2, 0, 2, 0)]
-        [InlineData(CompassDirections.NORTH, 2, SURFACESIZE, 2, SURFACESIZE)]
-        public void Move_WhenStatusIsOn_AtBoundary(CompassDirections currentDirection, int currentPositionX, int currentPositionY, int expectedPositionX, int expectedPositionY)
+        public void Move_WhenStatusIsOn_AtBoundary_ValidMovement(CompassDirections currentDirection, int currentPositionX, int currentPositionY, int expectedPositionX, int expectedPositionY)
         {
             var robot = new ToyRobot(new TableSurface(), _exceptionFactory);
             robot.Place(new RobotPosition { X = currentPositionX, Y = currentPositionY, Direction = currentDirection });
@@ -133,16 +137,30 @@ namespace UnitTests.RobotModels
         }
 
         [Theory]
-        [InlineData(CompassDirections.NORTH, CompassDirections.NORTH)]
-        [InlineData(CompassDirections.EAST, CompassDirections.EAST)]
-        [InlineData(CompassDirections.SOUTH, CompassDirections.SOUTH)]
-        [InlineData(CompassDirections.WEST, CompassDirections.WEST)]
-        public void Left_WhenStatusIsOff(CompassDirections currentDirection, CompassDirections expectedDirection )
+        [InlineData(CompassDirections.SOUTH, 0, 0)]
+        [InlineData(CompassDirections.WEST, 0, 0)]
+        [InlineData(CompassDirections.NORTH, SURFACESIZE, SURFACESIZE)]
+        [InlineData(CompassDirections.EAST, SURFACESIZE, SURFACESIZE)]
+        [InlineData(CompassDirections.SOUTH, 2, 0)]
+        [InlineData(CompassDirections.NORTH, 2, SURFACESIZE)]
+        public void Move_WhenStatusIsOn_AtBoundary_InValidMovement(CompassDirections currentDirection, int currentPositionX, int currentPositionY)
         {
             var robot = new ToyRobot(new TableSurface(), _exceptionFactory);
-            robot.RotateToLeft();
+            robot.Place(new RobotPosition { X = currentPositionX, Y = currentPositionY, Direction = currentDirection });
 
-            Assert.Equal(RobotStatus.Off, robot.Status);
+            Exception ex = Assert.Throws<SafeException>(() => robot.MoveForward());
+
+            Assert.Equal("please place this robot first", ex.Message);
+        }
+
+        [Fact]
+        public void Left_WhenStatusIsOff()
+        {
+            var robot = new ToyRobot(new TableSurface(), _exceptionFactory);
+
+            Exception ex = Assert.Throws<SafeException>(() => robot.RotateToLeft());
+
+            Assert.Equal("please place this robot first", ex.Message);
         }
 
         [Theory]
@@ -160,17 +178,14 @@ namespace UnitTests.RobotModels
             Assert.Equal(expectedDirection, robot.Position.Direction);
         }
 
-        [Theory]
-        [InlineData(CompassDirections.NORTH, CompassDirections.NORTH)]
-        [InlineData(CompassDirections.EAST, CompassDirections.EAST)]
-        [InlineData(CompassDirections.SOUTH, CompassDirections.SOUTH)]
-        [InlineData(CompassDirections.WEST, CompassDirections.WEST)]
-        public void Right_WhenStatusIsOff(CompassDirections currentDirection, CompassDirections expectedDirection)
+        [Fact]
+        public void Right_WhenStatusIsOff()
         {
             var robot = new ToyRobot(new TableSurface(), _exceptionFactory);
-            robot.RotateToRight();
 
-            Assert.Equal(RobotStatus.Off, robot.Status);
+            Exception ex = Assert.Throws<SafeException>(() => robot.RotateToRight());
+
+            Assert.Equal("please place this robot first", ex.Message);
         }
 
         [Theory]
@@ -187,5 +202,6 @@ namespace UnitTests.RobotModels
             Assert.Equal(RobotStatus.On, robot.Status);
             Assert.Equal(expectedDirection, robot.Position.Direction);
         }
+        
     }
 }

@@ -6,5 +6,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Robots.Surfaces\Robots.Surfaces.csproj" />
+    <ProjectReference Include="..\Frameworks.Exceptions\Frameworks.Exceptions.csproj" />
   </ItemGroup>
 </Project>

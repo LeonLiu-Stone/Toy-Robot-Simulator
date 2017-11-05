@@ -1,8 +1,12 @@
 /Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Responses/bin/Debug/netcoreapp2.0/Robots.Responses.deps.json
 /Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Responses/bin/Debug/netcoreapp2.0/Robots.Responses.dll
 /Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Responses/bin/Debug/netcoreapp2.0/Robots.Responses.pdb
+/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Responses/bin/Debug/netcoreapp2.0/Frameworks.Exceptions.dll
+/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Responses/bin/Debug/netcoreapp2.0/Frameworks.Logging.dll
 /Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Responses/bin/Debug/netcoreapp2.0/Robots.Surfaces.dll
 /Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Responses/bin/Debug/netcoreapp2.0/Robots.Surfaces.pdb
+/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Responses/bin/Debug/netcoreapp2.0/Frameworks.Exceptions.pdb
+/Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Responses/bin/Debug/netcoreapp2.0/Frameworks.Logging.pdb
 /Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Responses/obj/Debug/netcoreapp2.0/Robots.Responses.csprojResolveAssemblyReference.cache
 /Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Responses/obj/Debug/netcoreapp2.0/Robots.Responses.csproj.CoreCompileInputs.cache
 /Users/leon/Projects/Interview/ToyRobotSimulator/Robots.Responses/obj/Debug/netcoreapp2.0/Robots.Responses.AssemblyInfoInputs.cache

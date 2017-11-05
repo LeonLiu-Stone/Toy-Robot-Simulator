@@ -14,10 +14,6 @@ namespace Entrances.Prompt
             var robot = new ToyRobot(new TableSurface(), exceptionFactory);
             robot.ProgressChanged += OnProgressChanged;
 
-            Console.WriteLine("Please any key to start");
-            Console.ReadKey();
-            Console.WriteLine();
-
             string commandLine = string.Empty;
             while (true)
             {
@@ -40,7 +36,6 @@ namespace Entrances.Prompt
             }
 
             Console.WriteLine("This demo is finished. Thanks for your time!");
-            Console.ReadKey();
         }
 
         private static void OnProgressChanged(object sender, ProgressChangedEventArgs e)

@@ -3,11 +3,22 @@ using Robots.Surfaces;
 
 namespace Robots.Responses
 {
+    /// <summary>
+    /// Controllable responses.
+    /// </summary>
     public class ControllableResponses
     {
-        public static bool PlaceRobotToFlatSurface(RobotPosition position, Surface surface)
+        /// <summary>
+        /// Places the robot to flat surface.
+        /// </summary>
+        /// <returns><c>true</c>, if robot to flat surface was placed, <c>false</c> otherwise.</returns>
+        /// <param name="expectedPosition">Expected position.</param>
+        /// <param name="surface">Surface.</param>
+        public static RobotPosition PlaceRobotToFlatSurface(RobotPosition expectedPosition, Surface surface)
         {
-            throw new NotImplementedException();
+            if (expectedPosition == null) return null;
+
+            return surface.InBoundary(expectedPosition) ? expectedPosition : null;
         }
     }
 }
