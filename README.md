@@ -16,6 +16,9 @@ Highlights:
     SOLID
     C# 7 [ codes in Invoker class in Robots.Commands project]
 
+NB: althought this project was implemented by partly using TTD, the Robots.Models project was not totally realised 
+    by TDD as xUnit does not work currently in this project.
+    after all test cases were developed, ToyRobot class could not be tested by those test cases.
 
 Solution Instructions
     Entrances.Prompt        -> A console project, the startup project of this solution.
