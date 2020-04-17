@@ -1,4 +1,5 @@
 # Toy Robot Simulator
+A code test project for Jetstar in 2017
 
 Development Environment:
     Visual Studio Community 2017 for Mac
